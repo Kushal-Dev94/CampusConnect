@@ -56,3 +56,7 @@ body {
   div.content {
     text-align: center;
   }
+
+  model-viewer {
+    width: 800px;
+    height: 600px;

@@ -21,7 +21,23 @@
     <h2>Campus Connect</h2>
     <p>Interact with the 3d model below.</p>
 
-    <model-viewer src="6th_scans_images/3d_models/Kushal2.gltf" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+    <div>
+      <model-viewer src="6th_scans_images/3d_models/Kushal2.gltf" ar ar-modes="webxr scene-viewer quick-look"
+        camera-controls poster="poster.webp" shadow-intensity="0.44" exposure="1">
+        <button class="Hotspot" slot="hotspot-2" data-position="31828.871326866345m 0m 12254.841801951572m"
+          data-normal="0m 1m 0m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">C-601</div>
+        </button><button class="Hotspot" slot="hotspot-3"
+          data-position="33596.7224451559m 9.094947017729282e-13m 12240.770041293468m" data-normal="0m 1m 0m"
+          data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">C-602</div>
+        </button>
+        <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+        </div>
+      </model-viewer>
+    </div>
+
   </div>
 
 </body>
