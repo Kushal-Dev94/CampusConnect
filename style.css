@@ -1,7 +1,10 @@
-body {
-    margin: 0;
-    font-family: "Lato", sans-serif;
-  }
+html, body { 
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+  overflow: hidden; 
+  font-family: "Lato", sans-serif;
+}
   
   .sidebar {
     margin: 0;
@@ -58,5 +61,6 @@ body {
   }
 
   model-viewer {
-    width: 800px;
-    height: 600px;
+    width: 100vw;
+    height: 100vh;
+  }

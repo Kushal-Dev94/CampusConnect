@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Campus Connect</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="script" href="script.js">
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 </head>
 
 <body>
   <div class="sidebar">
     <a class="active" href="home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
+    <a href="#floors">Floor</a>
+    <a href="#learning">Learning</a>
     <a href="#about">About</a>
   </div>
 
@@ -22,20 +23,20 @@
     <p>Interact with the 3d model below.</p>
 
     <div>
-      <model-viewer src="6th_scans_images/3d_models/Kushal2.gltf" ar ar-modes="webxr scene-viewer quick-look"
-        camera-controls poster="poster.webp" shadow-intensity="0.44" exposure="1">
-        <button class="Hotspot" slot="hotspot-2" data-position="31828.871326866345m 0m 12254.841801951572m"
-          data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">C-601</div>
-        </button><button class="Hotspot" slot="hotspot-3"
-          data-position="33596.7224451559m 9.094947017729282e-13m 12240.770041293468m" data-normal="0m 1m 0m"
-          data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">C-602</div>
+      <model-viewer src="6th_scans/3d_models/6th_floor.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="6th_scans/3d_models/poster.webp" shadow-intensity="1" environment-image="6th_scans/3d_models/pillars_1k.hdr" exposure="1.21" auto-rotate camera-orbit="-361.1deg 40.93deg 6514m" field-of-view="22.98deg">
+        <button class="Hotspot" slot="hotspot-1" data-position="31794.96435699198m 9.094947017729282e-13m 12268.690300750326m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">C-601</div>
+        </button><button class="Hotspot" slot="hotspot-3" data-position="33627.513190435304m 0m 12260.039851539796m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">C-602</div>
         </button>
         <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
+            <div class="update-bar"></div>
         </div>
-      </model-viewer>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+    </model-viewer>
+    
     </div>
 
   </div>
