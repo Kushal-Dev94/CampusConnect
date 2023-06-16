@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Connect | IT2</title>
+  <!--========== BOX ICONS ==========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/css/styles.css"></script>
+  <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+  <!--========== HEADER ==========-->
+  <header class="header">
+    <div class="header__container">
+      <img src="assets/img/CampusConnect.jpg" alt="CampusConnect Logo" class="header__img">
+
+      <a href="index.html" style="color:#6923D0;" class="header__logo">Campus Connect</a>
+
+      <div class="header__search">
+        <input type="search" placeholder="Search" class="header__input">
+        <i class='bx bx-search header__icon'></i>
+      </div>
+
+      <div class="header__toggle">
+        <i class='bx bx-menu' id="header-toggle"></i>
+      </div>
+    </div>
+  </header>
+
+  <!--========== NAV ==========-->
+  <div class="nav" id="navbar">
+    <nav class="nav__container">
+      <div>
+        <a href="index.html" class="nav__link nav__logo">
+          <i class='bx bxs-disc nav__icon'></i>
+          <span class="nav__logo-name">Campus Connect</span>
+        </a>
+
+        <div class="nav__list">
+          <div class="nav__items">
+            <h3 class="nav__subtitle">Profile</h3>
+
+            <a href="#" class="nav__link active">
+              <i class='bx bx-home nav__icon'></i>
+              <span class="nav__name">Home</span>
+            </a>
+
+            <div class="nav__dropdown">
+              <a href="#" class="nav__link">
+                <i class='bx bx-user nav__icon'></i>
+                <span class="nav__name">Profile</span>
+                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+              </a>
+
+              <div class="nav__dropdown-collapse">
+                <div class="nav__dropdown-content">
+                  <a href="#" class="nav__dropdown-item">Passwords</a>
+                  <a href="#" class="nav__dropdown-item">Mail</a>
+                  <a href="#" class="nav__dropdown-item">Accounts</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="nav__link">
+              <i class='bx bx-message-rounded nav__icon'></i>
+              <span class="nav__name">Messages</span>
+            </a>
+          </div>
+
+          <div class="nav__items">
+            <h3 class="nav__subtitle">Learning</h3>
+
+            <div class="nav__dropdown">
+              <a href="#" class="nav__link">
+                <i class='bx bx-desktop nav__icon'></i>
+                <span class="nav__name">IT2</span>
+                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+              </a>
+
+              <div class="nav__dropdown-collapse">
+                <div class="nav__dropdown-content">
+                  <a href="IT2.html" class="nav__dropdown-item">Syllabus</a>
+                  <a href="IT2.html" class="nav__dropdown-item">Timetable</a>
+                  <a href="IT2.html" class="nav__dropdown-item">Notes</a>
+                  <a href="IT2.html" class="nav__dropdown-item">PYQs</a>
+                </div>
+              </div>
+
+            </div>
+
+            <a href="#" class="nav__link">
+              <i class='bx bx-compass nav__icon'></i>
+              <span class="nav__name">Explore</span>
+            </a>
+            <a href="#" class="nav__link">
+              <i class='bx bx-bookmark nav__icon'></i>
+              <span class="nav__name">Saved</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="nav__link nav__logout">
+        <i class='bx bx-log-out nav__icon'></i>
+        <span class="nav__name">Log Out</span>
+      </a>
+    </nav>
+  </div>
+
+  <main>
+    <section style="text-align: center;">
+      <hr>
+      <hr>
+      <h1 style="font-weight: 800; text-align: center; font-size: larger; color:#6923D0;">Campus Connect</h1>
+      <hr>
+      <hr>
+      <h2 style="text-align: center; font-size: large; color: #6923D0;">C-602 | Information Technology 2</h1>
+        <hr>
+        <gr></gr>
+
+        <h3 id="syllabus" class="resourceHeading">Syllabus</h3>
+        <hr>
+        <h3 class="resourceContent">F.E. (ALL BRANCHES) Semester 1 & 2 (2019 Pattern)<a class="downloadbtn"
+            href="IT2/Learning/Syllabus/be_first-year-fe-engineering_fe-all-branches-semester-1-2-2019-pattern.pdf"
+            download><span>Download</span><span>PDF</span></a></h3>
+        <h3 class="resourceContent">F.E. (ALL BRANCHES) Semester 1 & 2 (2015 Pattern)<a class="downloadbtn"
+            href="IT2/Learning/Syllabus/be_first-year-fe-engineering_fe-all-branches-semester-1-2-2015-pattern.pdf"
+            download><span>Download</span><span>PDF</span></a></h3>
+        <hr>
+
+        <h3 id="PYQs" class="resourceHeading">Previous Question Papers</h3>
+        <hr>
+        <h3 class="resourceContent">ENGINEERING MATHEMATICS-II (PATTERN 2019) MAY 2022 <a class="downloadbtn"
+            href="IT2/Learning/PYQs/be_first-year-fe-engineering_semester-2_2022_may_engineering-mathematics-ii-pattern-2019.pdf"
+            download><span>Download</span><span>PDF</span></a></h3>
+        <h3 class="resourceContent">ENGINEERING MATHEMATICS-II (PATTERN 2019) MARCH 2020 <a class="downloadbtn"
+            href="IT2/Learning/PYQs/be_first-year-fe-engineering_semester-2_2020_march_engineering-mathematics-ii-pattern-2019.pdf"
+            download><span>Download</span><span>PDF</span></a></h3>
+        <hr>
+        <h3 class="resourceContent">ENGINEERING GRAPHICS (PATTERN 2019) MAY 2022 <a class="downloadbtn"
+          href="IT2/Learning/PYQs/be_first-year-fe-engineering_semester-2_2022_may_engineering-graphics-pattern-2019.pdf"
+            download><span>Download</span><span>PDF</span></a></h3>
+        <hr>
+        <h3 class="resourceContent">ENGINEERING PHYSICS (PATTERN 2019) NOVEMBER 2019 <a class="downloadbtn"
+          href="IT2/Learning/PYQs/Physics/be_first-year-fe-engineering_semester-2_2019_november_engineering-physics-pattern-2019.pdf"
+          download><span>Download</span><span>PDF</span></a></h3>
+        <h3 class="resourceContent">ENGINEERING PHYSICS (PATTERN 2019) OCTOBER 2019 <a class="downloadbtn"
+          href="IT2/Learning/PYQs/Physics/be_first-year-fe-engineering_semester-2_2019_october_engineering-physics-pattern-2019.pdf"
+          download><span>Download</span><span>PDF</span></a></h3>
+
+        <h3 id="PYQs" class="resourceHeading">Notes</h3>
+        <hr>
+        <h3 class="resourceContent">In progress</h3>
+
+    </section>
+  </main>
+</body>
+
+</html>

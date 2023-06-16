@@ -11,8 +11,6 @@
   <!--========== CSS ==========-->
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/main.js"></script>
-
-  <link rel="script" href="script.js">
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 </head>
 
@@ -22,7 +20,7 @@
     <div class="header__container">
       <img src="assets/img/CampusConnect.jpg" alt="CampusConnect Logo" class="header__img">
 
-      <a href="#" class="header__logo">Campus Connect</a>
+      <a href="index.html" style="color:#6923D0;" class="header__logo">Campus Connect</a>
 
       <div class="header__search">
         <input type="search" placeholder="Search" class="header__input">
@@ -39,7 +37,7 @@
   <div class="nav" id="navbar">
     <nav class="nav__container">
       <div>
-        <a href="#" class="nav__link nav__logo">
+        <a href="index.html" class="nav__link nav__logo">
           <i class='bx bxs-disc nav__icon'></i>
           <span class="nav__logo-name">Campus Connect</span>
         </a>
@@ -87,10 +85,10 @@
 
               <div class="nav__dropdown-collapse">
                 <div class="nav__dropdown-content">
-                  <a href="#" class="nav__dropdown-item">Syllabus</a>
-                  <a href="#" class="nav__dropdown-item">Timetable</a>
-                  <a href="#" class="nav__dropdown-item">Notes</a>
-                  <a href="#" class="nav__dropdown-item">PYQs</a>
+                  <a href="IT2.html" class="nav__dropdown-item">Syllabus</a>
+                  <a href="IT2.html" class="nav__dropdown-item">Timetable</a>
+                  <a href="IT2.html" class="nav__dropdown-item">Notes</a>
+                  <a href="IT2.html" class="nav__dropdown-item">PYQs</a>
                 </div>
               </div>
 
@@ -118,24 +116,24 @@
   <!--========== CONTENTS ==========-->
   <main>
     <section>
-      <h1 style="text-align: center; font-size: large;">Campus Connect</h1>
+      <h1  style="font-weight: 800; text-align: center; font-size: larger; color:#6923D0;">Campus Connect</h1>
       <p style="text-align: center; font-size: large;">Interact with the 3D model below!</p>
   </main>
 
   <div class="content">
     <div>
       <model-viewer id="6thfloor" src="6th_scans/3d_models/6thFloor.glb" ar ar-modes="webxr scene-viewer quick-look"
-        camera-controls shadow-intensity="1" environment-image="6th_scans/3d_models/pillars_1k.hdr" exposure="1"
+        camera-controls shadow-intensity="1" environment-image="6th_scans/3d_models/pillars_1k.hdr" exposure="1.9"
         auto-rotate camera-orbit="-361.1deg 49.54deg 6514m" field-of-view="22.98deg">
         <button style="border-radius: 30px;" class="Hotspot" slot="hotspot-2"
           data-position="31828.469774156987m 0m 12238.0255923783m" data-normal="0m 1m 0m"
           data-visibility-attribute="visible">
-          <div onclick="window.open('IT2/IT2.html', '_blank');" class="HotspotAnnotation">C-601</div>
+          <div onclick="window.open('IT2.html', '_blank');" class="HotspotAnnotation">C-601</div>
         </button>
         <button style="border-radius: 30px;" class="Hotspot" slot="hotspot-3"
           data-position="33590.854707373655m 0m 12239.863447393724m" data-normal="0m 1m 0m"
           data-visibility-attribute="visible">
-          <div onclick="window.open('IT2/IT2.html', '_blank');" class="HotspotAnnotation">C-602</div>
+          <div onclick="window.open('IT2.html', '_blank');" class="HotspotAnnotation">C-602</div>
         </button>
         <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
