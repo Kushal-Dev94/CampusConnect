@@ -5,36 +5,143 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Campus Connect</title>
-  <link rel="stylesheet" href="style.css">
+  <!--========== BOX ICONS ==========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js"></script>
+
   <link rel="script" href="script.js">
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 </head>
 
 <body>
-  <div class="sidebar">
-    <a class="active" href="home">Home</a>
-    <a href="#floors">Floor</a>
-    <a href="#learning">Learning</a>
-    <a href="#about">About</a>
-  </div>
+        <!--========== HEADER ==========-->
+        <header class="header">
+          <div class="header__container">
+              <img src="assets/img/perfil.jpg" alt="" class="header__img">
+
+              <a href="#" class="header__logo">Campus Connect</a>
+  
+              <div class="header__search">
+                  <input type="search" placeholder="Search" class="header__input">
+                  <i class='bx bx-search header__icon'></i>
+              </div>
+  
+              <div class="header__toggle">
+                  <i class='bx bx-menu' id="header-toggle"></i>
+              </div>
+          </div>
+      </header>
+
+      <!--========== NAV ==========-->
+      <div class="nav" id="navbar">
+          <nav class="nav__container">
+              <div>
+                  <a href="#" class="nav__link nav__logo">
+                      <i class='bx bxs-disc nav__icon' ></i>
+                      <span class="nav__logo-name">Campus Connect</span>
+                  </a>
+  
+                  <div class="nav__list">
+                      <div class="nav__items">
+                          <h3 class="nav__subtitle">Profile</h3>
+  
+                          <a href="#" class="nav__link active">
+                              <i class='bx bx-home nav__icon' ></i>
+                              <span class="nav__name">Home</span>
+                          </a>
+                          
+                          <div class="nav__dropdown">
+                              <a href="#" class="nav__link">
+                                  <i class='bx bx-user nav__icon' ></i>
+                                  <span class="nav__name">Profile</span>
+                                  <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                              </a>
+
+                              <div class="nav__dropdown-collapse">
+                                  <div class="nav__dropdown-content">
+                                      <a href="#" class="nav__dropdown-item">Passwords</a>
+                                      <a href="#" class="nav__dropdown-item">Mail</a>
+                                      <a href="#" class="nav__dropdown-item">Accounts</a>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <a href="#" class="nav__link">
+                              <i class='bx bx-message-rounded nav__icon' ></i>
+                              <span class="nav__name">Messages</span>
+                          </a>
+                      </div>
+  
+                      <div class="nav__items">
+                          <h3 class="nav__subtitle">Learning</h3>
+  
+                          <div class="nav__dropdown">
+                              <a href="#" class="nav__link">
+                                  <i class='bx bx-bell nav__icon' ></i>
+                                  <span class="nav__name">IT2</span>
+                                  <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                              </a>
+
+                              <div class="nav__dropdown-collapse">
+                                  <div class="nav__dropdown-content">
+                                      <a href="#" class="nav__dropdown-item">Syllabus</a>
+                                      <a href="#" class="nav__dropdown-item">Timetable</a>
+                                      <a href="#" class="nav__dropdown-item">Notes</a>
+                                      <a href="#" class="nav__dropdown-item">PYQs</a>
+                                  </div>
+                              </div>
+
+                          </div>
+
+                          <a href="#" class="nav__link">
+                              <i class='bx bx-compass nav__icon' ></i>
+                              <span class="nav__name">Explore</span>
+                          </a>
+                          <a href="#" class="nav__link">
+                              <i class='bx bx-bookmark nav__icon' ></i>
+                              <span class="nav__name">Saved</span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+              <a href="#" class="nav__link nav__logout">
+                  <i class='bx bx-log-out nav__icon' ></i>
+                  <span class="nav__name">Log Out</span>
+              </a>
+          </nav>
+      </div>
+
+      <!--========== CONTENTS ==========-->
+      <main>
+          <section>
+              <p>Interact with the 3D model below!</p>
+      </main>
 
   <div class="content">
-    <h2>Campus Connect</h2>
-    <p>Interact with the 3d model below.</p>
-
     <div>
-      <model-viewer src="6th_scans/3d_models/6thFloor.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" environment-image="6th_scans/3d_models/pillars_1k.hdr" exposure="1" auto-rotate camera-orbit="-361.1deg 49.54deg 6514m" field-of-view="22.98deg">
-        <button class="Hotspot" slot="hotspot-2" data-position="31828.469774156987m 9.094947017729282e-13m 12238.0255923783m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">C-601</div>
-        </button><button class="Hotspot" slot="hotspot-3" data-position="33590.854707373655m 0m 12239.863447393724m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">C-602</div>
+      <model-viewer id="6thfloor" src="6th_scans/3d_models/6thFloor.glb" ar ar-modes="webxr scene-viewer quick-look"
+        camera-controls shadow-intensity="1" environment-image="6th_scans/3d_models/pillars_1k.hdr" exposure="1"
+        auto-rotate camera-orbit="-361.1deg 49.54deg 6514m" field-of-view="22.98deg">
+        <button style="border-radius: 30px;" class="Hotspot" slot="hotspot-2"
+          data-position="31828.469774156987m 0m 12238.0255923783m" data-normal="0m 1m 0m"
+          data-visibility-attribute="visible">
+          <div onclick="window.open('http://google.pl', '_blank');" class="HotspotAnnotation">C-601</div>
+        </button>
+        <button style="border-radius: 30px;" class="Hotspot" slot="hotspot-3"
+          data-position="33590.854707373655m 0m 12239.863447393724m" data-normal="0m 1m 0m"
+          data-visibility-attribute="visible">
+          <div onclick="window.open('http://google.pl', '_blank');" class="HotspotAnnotation">C-602</div>
         </button>
         <div class="progress-bar hide" slot="progress-bar">
-            <div class="update-bar"></div>
+          <div class="update-bar"></div>
         </div>
-    </model-viewer>
-    
-    
+      </model-viewer>
+
+
     </div>
 
   </div>
